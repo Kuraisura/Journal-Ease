@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createnote">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarofcreatenote"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/akaroa">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:hint="Enter your title here"
+            android:fontFamily="@font/times"
+            android:id="@+id/createtitleofnote" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:background="#faf7f7"
+        android:gravity="top|left"
+        android:textColor="@color/black"
+        android:hint="Enter your content here"
+        android:fontFamily="@font/helvetica"
+        android:layout_below="@id/toolbarofcreatenote"
+        android:padding="15dp"
+        android:id="@+id/createcontentofnote">
+
+    </EditText>
+
+    <ImageView
+            android:id="@+id/backGround"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/splash_notext"
+            android:scaleType="centerCrop"
+            android:alpha="0.5" />
+
+
+    <Button
+            android:id="@+id/clearFieldsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Fields"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="33dp" android:layout_toStartOf="@+id/savenote"
+            android:layout_marginEnd="195dp" android:layout_alignParentStart="true"
+            android:backgroundTint="@color/akaroa"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/savenote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/akaroa"
+        android:src="@drawable/save"
+        app:maxImageSize="59dp"
+
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/progressbarofcreatenote"
+        android:layout_marginTop="10dp">
+
+
+
+    </ProgressBar>
+
+</RelativeLayout>

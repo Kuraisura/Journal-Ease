@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".editnoteactivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarofeditnote"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/akaroa"
+            android:elevation="4dp">
+
+        <!-- Title Input -->
+        <EditText
+                android:id="@+id/edittitleofnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Enter your title here"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:fontFamily="@font/times"/>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Content Input -->
+    <EditText
+            android:id="@+id/editcontentofnote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbarofeditnote"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#faf7f7"
+            android:gravity="start|top"
+            android:hint="Enter your content here"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/helvetica"/>
+
+    <Button
+            android:id="@+id/clearFieldsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Fields"
+            android:backgroundTint="@color/akaroa"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="27dp" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp" android:layout_toStartOf="@+id/saveeditnote"
+            android:layout_marginEnd="184dp" android:layout_alignParentStart="true"/>
+    <ImageView
+            android:id="@+id/backGround"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/splash_notext"
+            android:scaleType="centerCrop"
+            android:alpha="0.4" />
+
+    <!-- Save Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/saveeditnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/save"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:maxImageSize="55dp"/>
+
+</RelativeLayout>
