@@ -59,41 +59,61 @@ The Android code adapts an earlier notes-app tutorial structure. Existing packag
 
 Import the Gradle project into Android Studio, synchronize dependencies, and run on a compatible emulator or device. app/build.gradle targets SDK 33 with minimum SDK 26. The current local demo session and note store do not require Firebase. Test document export permissions on the intended Android version.
 
-## Screenshots
+## Screenshot and module walkthrough
 
-<table>
-<tr>
-<td align="center"><img src="screenshots/1.png" alt="Brand identity" width="260"><br>Brand identity</td>
-<td align="center"><img src="screenshots/2.png" alt="Empty state" width="260"><br>Empty state</td>
-</tr>
-</table>
+Expand a screen below to see the capture and an explanation of the module, its visible controls, and its role in the application.
+
+<details open>
+<summary><strong>01 · JournalEase splash screen</strong></summary>
+
+The owl-and-graduation-cap mark introduces the journal with its beige/brown visual theme. This is a startup identity screen, not a cloud-sync or authentication status display.
+
+<p><img src="screenshots/1.png" alt="JournalEase splash screen" width="360"></p>
+
+</details>
 
 <details>
-<summary>View all 6 screenshots</summary>
+<summary><strong>02 · Empty note library</strong></summary>
 
-### 1. Brand identity
+The note list is empty, with a search action, overflow menu, and prominent add button. It gives first-time users a direct route to creating their first entry.
 
-![Brand identity](screenshots/1.png)
+<p><img src="screenshots/2.png" alt="Empty note library" width="360"></p>
 
-### 2. Empty state
+</details>
 
-![Empty state](screenshots/2.png)
+<details>
+<summary><strong>03 · Note creation editor</strong></summary>
 
-### 3. Note editor
+A title and body are being entered, with Clear Fields and save controls near the bottom. This module captures a new local journal entry before returning to the library.
 
-![Note editor](screenshots/3.png)
+<p><img src="screenshots/3.png" alt="Note creation editor" width="360"></p>
 
-### 4. Confirmation feedback
+</details>
 
-![Confirmation feedback](screenshots/4.png)
+<details>
+<summary><strong>04 · Saved note and confirmation</strong></summary>
 
-### 5. Growing collection
+A note card appears alongside a Note Created Successfully message. The card exposes an overflow menu for follow-up actions, confirming that the create flow has returned to the library.
 
-![Growing collection](screenshots/5.png)
+<p><img src="screenshots/4.png" alt="Saved note and confirmation" width="360"></p>
 
-### 6. Account authentication
+</details>
 
-![Account authentication](screenshots/6.png)
+<details>
+<summary><strong>05 · Multiple color-coded entries</strong></summary>
+
+Two cards show how the collection grows, with distinct colors, title/body previews, and per-note menus. Users can scan the library and reopen an entry without viewing every note in full.
+
+<p><img src="screenshots/5.png" alt="Multiple color-coded entries" width="360"></p>
+
+</details>
+
+<details>
+<summary><strong>06 · Local demo sign-in</strong></summary>
+
+Email/password fields, password visibility, recovery, and registration links form the login interface. The current repository uses a local demo session; this screen should not be interpreted as real account protection or cloud synchronization.
+
+<p><img src="screenshots/6.png" alt="Local demo sign-in" width="360"></p>
 
 </details>
 
